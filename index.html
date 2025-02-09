@@ -1,1 +1,91 @@
-<p>hello</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? ❤️</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        img {
+            max-width: 100%;
+            height: 350px;
+            width: 350px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+        }
+        .tooltip-box {
+            position: absolute;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            visibility: hidden;
+            white-space: nowrap;
+            transform: translate(0, 10%);
+        }
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+        .image-container:hover .tooltip-box {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center sparkle-title text-danger mt-5">Will You Be My Valentine? ❤️</h1>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-6 p-3 text-center">
+                <div class="image-container">
+                    <img src="images/image1.jpeg" style="margin-left: 40%" alt="Image 1">
+                    <div class="tooltip-box" style="margin-left: -50px;"> Axe throwing!!!</div>
+                </div>
+            </div>
+            <div class="col-6 p-3 text-center">
+                <div class="image-container">
+                    <img src="images/image2.jpeg" alt="Image 2" style="margin-left: -50%; margin-top: 10%;">
+                    <div class="tooltip-box">SUBWAY!!</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 p-3 text-center">
+                <div class="image-container">
+                    <img src="images/image3.jpeg" alt="Image 3" style="margin-left: 40%; margin-top: -40%;">
+                    <div class="tooltip-box">SQUIDGAMEEEEEE</div>
+                </div>
+            </div>
+            <div class="col-6 p-3 text-center">
+                <div class="image-container">
+                    <img src="images/image4.jpeg" alt="Image 4" style="margin-left: -60%; margin-top: -20%;">
+                    <div class="tooltip-box">This was crazy ngl</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <button class="btn btn-success" onclick="showPopup()">Yes</button>
+        <button class="btn btn-danger no-btn" onmouseover="moveButton(this)">No</button>
+    </div>
+    
+    <script>
+        function showPopup() {
+            alert("You clicked Yes!");
+        }
+        function moveButton(button) {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 100);
+            button.style.transform = `translate(${x}px, ${y}px)`;
+        }
+    </script>
+    <script>
+        function showPopup() {
+            alert("FREAKKKKKKKK!!!");
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
